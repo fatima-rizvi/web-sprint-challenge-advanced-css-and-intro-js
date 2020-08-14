@@ -314,7 +314,7 @@ function lotsOfArt(arr){
   return console.log(lotsOfPaintings);
 }
 
-lotsOfArt(artists);
+//lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
@@ -356,3 +356,21 @@ function randomize(/* Code here */){
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+
+function check20sStretch(arr){
+  for(let i = 0; i < arr.length; i++){
+    let lifeSpan = arr[i]["years"].split(" - ");
+    let birthYearString = lifeSpan[0];
+    let deathYearString = lifeSpan[1];
+    let birthYearNum = Number(birthYearString);
+    let deathYearNum = Number(deathYearString);
+    if(birthYearNum >= 1900 && deathYearNum <= 2000){
+      console.log(arr[i]["name"]);
+    }
+  }
+}  
+ function get20sStretch(arr){
+  return(arr.filter(check20sStretch));
+}
+
+console.log(get20sStretch(artists));
