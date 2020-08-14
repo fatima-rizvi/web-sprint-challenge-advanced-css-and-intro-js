@@ -294,7 +294,7 @@ function addArtist(arr, id, name, years, genre, nationality, bio){
   return arr;
 }
 
-console.log(addArtist(artists, 20, "Fatima Rizvi", "2001- 2020", "Web Design", "Pakistani", "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible."));
+//console.log(addArtist(artists, 20, "Fatima Rizvi", "2001- 2020", "Web Design", "Pakistani", "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible."));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -304,13 +304,17 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(arr){
+  lotsOfPaintings = [];
+  for(let i = 0; i < arr.length; i++){
+    if (arr[i]["paintings"] > 100){
+      lotsOfPaintings.push(arr[i]["name"]);
+    }
+  }
+  return console.log(lotsOfPaintings);
 }
 
-
+lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
