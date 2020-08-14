@@ -282,11 +282,19 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(arr, id, name, years, genre, nationality, bio){
+  arr.push({
+    "id": id,
+    "name": name,
+    "years": years,
+    "genre": genre,
+    "nationality": nationality,
+    "bio": bio}
+  )
+  return arr;
+}
 
-    /* Code here */
-
-  }
+console.log(addArtist(artists, 20, "Fatima Rizvi", "2001- 2020", "Web Design", "Pakistani", "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible."));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
