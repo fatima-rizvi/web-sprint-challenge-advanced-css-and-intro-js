@@ -23,9 +23,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+    In real life, we have structures built in place to make things more accessible to everyone. Some of these things are ramps, elevators, large text books, braille, and captions on videos among other things. Just like that, there are ways to make websites more accessible to everyone ensuring that all people can enjoy the web. For example, some people have slower internet connections so we try and keep the size of graphics on websites small in order to let them load faster. Some people have trouble reading small text, so we need to make sure out text size is responsive and can be adjusted. We also need to make sure that screen readers can accurately read the website outloud to someone who may not be able to read it. There are many other examples of this, but essentially accessibility is there to make the site easily usable for everyone.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    1. Use semantic HTML for the screenreaders, which also helps other people reading your code.
+    2. Make the clickable margin for navigation large to make it easier to select it.
+    3. Make sure that the colors your using wouldn't make it difficult for color blind people, like don't try to contrast red and green.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    A variable is something that can hold information. Like how in math, x can be used to mean 3 or to mean y/4, a variable in coding can hold words, numbers, or other types of information. 
+
 4. What is the purpose of using functions in code?
+
+    A function is a block of code that can be reused with more than one set of data without having to rewrite it to adjust it everytime. I can make a function to do something simple like add, and then I can just use that function everytime I would want to add something. Without that function, I would have to rewrite all of the code needed to add two numbers together everytime I wanted to add. WHile it may not be such a hassle to do that for simple adition, it becomes really cumbersome very quickly when you want to perform more complex actions. Functions allow you to just write the code for that action one time, and then reuse the code everytime you want. It makes things take less code and look neater.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
